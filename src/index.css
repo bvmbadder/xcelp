@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  }
+
+  section{
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+  }
+
+.nav-link{
+  color: #f1f5f9;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: .75rem;
+}
+
+header :where(.navbar>*) {
+  justify-content: space-between;
+}
+:where(.navbar>*) {
+  display: inline-flex
+;
+  align-items: center;
+}
+:where(.navbar>*) {
+  align-items: normal !important;
+}
+
+.animate {
+  background-image: linear-gradient(45deg, #7553fc, #5b7af5, #7553fc, #346be3, #811ff9, #5b7af5, #7553fc, #7553fc, #5b7af5, #7553fc, #346be3, #811ff9, #5b7af5, #7553fc);
+  background-clip: text;
+  color: transparent;
+  background-size: 500%;
+  background-position: -100%;
+  animation: animateText 9s linear infinite;
+}
+
+.banner .gradientbg {
+  background-color: transparent;
+  top: 0;
+}
+
+.banner-rows {
+  position: absolute;
+  transform: rotate(-20deg);
+  top: -50%;
+  right: -24%;
+}
+
+
+
+.banner-col {
+  position: relative;
+  animation: move1 10s infinite alternate-reverse;
+}
+
+.banner-col:nth-child(2) {
+  position: relative;
+  animation: move2 10s infinite alternate-reverse;
+}
+
+.banner-col:nth-child(3) {
+  position: relative;
+  animation: move3 10s infinite alternate-reverse;
+}
+
+.banner-block {
+  overflow: hidden;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateY(-25%);
+}
+100% {
+  transform: translateY(-10%);
+}
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateY(-10);
+}
+100% {
+  transform: translateY(-25%);
+}
+}
+
+@keyframes move3 {
+  0% {
+    transform: translateY(-25%);
+}
+100% {
+  transform: translateY(-10%);
+}
+}
